@@ -1,0 +1,5 @@
+dotnet ef migrations add Initial -s src/moo.Api -p src/moo.Infrastructure
+
+dotnet ef database update -s src/moo.Api -p src/moo.Infrastructure
+
+dotnet publish -o publish/yyyymmdd-hhmm-moo-api
